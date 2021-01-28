@@ -6,4 +6,5 @@
     <string name="btn_finalizar">Finalizar</string>
     <string name="btn_navegador">Mostrar Navegador</string>
     <string name="btn_llamada">Llamar Llamuca</string>
+    <string name="btn_listar">Ver Listado</string>
 </resources>

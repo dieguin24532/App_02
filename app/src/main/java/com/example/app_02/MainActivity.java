@@ -30,7 +30,16 @@ public class MainActivity extends AppCompatActivity {
 
 
     public void finalizar(View view){
+
         finish();
+    }
+
+    public void Listado(View view){
+
+        Intent intent = new Intent(this,DatosActivity.class);
+
+        startActivity(intent);
+
     }
 
 }

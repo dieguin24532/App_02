@@ -34,4 +34,11 @@
         android:layout_height="wrap_content"
         android:text="@string/btn_llamada" />
 
+    <Button
+        android:id="@+id/btn_mostrar_datos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="Listado"
+        android:text="@string/btn_listar" />
+
 </LinearLayout>
