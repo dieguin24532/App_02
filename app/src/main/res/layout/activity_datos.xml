@@ -8,10 +8,10 @@
     tools:context=".DatosActivity" >
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/tv_datos"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="TextView" />
+        android:text="@string/tv_datos" />
 
     <ScrollView
         android:layout_width="match_parent"

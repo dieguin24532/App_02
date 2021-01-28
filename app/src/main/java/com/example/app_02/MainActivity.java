@@ -1,5 +1,6 @@
 package com.example.app_02;
 
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -12,6 +13,7 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
     private TextView tv_titulo;
+    private int codigo_requerido = 1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,8 +40,17 @@ public class MainActivity extends AppCompatActivity {
 
         Intent intent = new Intent(this,DatosActivity.class);
 
-        startActivity(intent);
+        startActivityForResult(intent,codigo_requerido);
 
     }
 
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if ((requestCode==codigo_requerido) && (resultCode==RESULT_OK)){
+
+            tv_titulo.setText("El dato selccionado es: "+ data.getDataString());
+
+        }
+    }
 }
