@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">App_02</string>
+    <string name="et_nombre_hint">Ingrese su nombre</string>
+    <string name="et_apellido_hint">Ingrese su apellido</string>
+    <string name="btn_ingresar">Ingresar</string>
+    <string name="btn_finalizar">Finalizar</string>
+    <string name="btn_navegador">Mostrar Navegador</string>
+    <string name="btn_llamada">Llamar</string>
+</resources>
